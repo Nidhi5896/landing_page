@@ -1,0 +1,56 @@
+
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+        }
+        .login{
+            width:50vw;
+           
+            
+        }
+        .text{
+            width:50vw;
+            
+            background: linear-gradient(to right, #ff9900, #ff00c8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo{
+            height:20vh;
+        }
+        .formins{
+
+            width:20vw
+        }
+        #uname,#pass{
+            width:100%;
+            border-radius: 5px;
+            height:25px;
+            color: black;
+            padding-left: 7px;
+            border:0.5px solid grey; 
+        }
+        .loginbtn{
+            width:100%;
+            background:linear-gradient(to right, #ff9900, #ff00c8);
+            border-radius: 5px;
+            height:25px;
+            color: black;
+            border:0px;
+        }
+ 

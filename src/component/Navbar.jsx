@@ -19,19 +19,13 @@ export default function Navbar()
                         <div className="buttons" style={{display:'flex',
                         justifyContent:'space-around' , width:'60vw'}}>
                         <Button  component = {NavLink} to = "/" variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color : 'black',borderRadius:'20px'}}>Home</Button>
-                        <Button component = {NavLink} to = "/categories"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color: 'black',borderRadius:'20px',padding:'3px'}}>Categories</Button>
-                        <Button component = {NavLink} to = "/courses"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color : 'black',borderRadius:'20px'}}>Courses</Button>
+                        <Button component = {NavLink} to = "/categories"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color: 'black',borderRadius:'20px'}}>Categories</Button>
+                        <Button component = {NavLink} to = "/report"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color : 'black',borderRadius:'20px'}}>Report</Button>
                         <Button component = {NavLink} to = "/forum"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color: 'black',borderRadius:'20px'}}>Forum</Button>
                         <Button component = {NavLink} to = "/blog"  variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color : 'black',borderRadius:'20px'}}>Blog</Button>
-                        <Button component = {NavLink} to = "/login"  sx = {{color : 'black',borderRadius:'20px'}}><Avatar src="/broken-image.jpg" /></Button>
-                        
-
-                                     
-         </div>
-                        
-
-                    </Toolbar>
-                    
+                        <Button component = {NavLink} to = "/login"   variant = "outlined"  style={({ isActive }) => { return { borderColor: isActive ? '#00B5E2' : 'white' } }} sx = {{color : 'black',borderRadius:'20px'}}>LogIn/Register</Button>                          
+                        </div>
+                    </Toolbar>   
                 </AppBar>
             </Box>
         </>

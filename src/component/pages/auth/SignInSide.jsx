@@ -1,6 +1,27 @@
 import './SignIn.css';
+import { useState } from 'react';
+import { NavLink } from "react-router-dom"
+
 
 function SignInSide() {
+  const [user,setUser] = useState({
+     userEmail:"",
+     password:"",
+  });
+  const handleInput=(e)=>{
+        let name=e.target.name;
+        let value=e.target.value;
+
+        setUser({
+          ...user,
+          [name]: value,
+        });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(JSON.stringify(user, null, 2));
+  };
   return (
     <div>
       <div className="wrapper">
@@ -12,21 +33,39 @@ function SignInSide() {
             <br />
             <br />
             <br />
-            <h4>please log into your account</h4>
+            <h4>LOGIN</h4>
+           
             <br />
-            <br />
-            <form className="formins">
-              <input type="text" id="uname" name="uname" placeholder="Username" /><br />
+            <form onSubmit={handleSubmit} className="form">
+              <input type="email" 
+              id="uemail" 
+              name="userEmail" 
+             
+              value={user.userEmail}
+              onChange={handleInput}
+              placeholder="User email" />
               <br />
-              <input type="password" id="pass" name="pass" placeholder="password" /><br />
               <br />
-              <button className="loginbtn">login</button>
+              <input type="password" 
+              id="upass" 
+              name="password" 
+             
+              value={user.password}
+              onChange={handleInput}
+              placeholder="password" />
+              <br />
+              <br />
+              <button type='submit' className="loginbtn">login</button>
             </form>
             <p>forgot password?</p>
             <br /><br />
             <h4>Don't have an account?</h4>
-            <button style={{ color: '#ff00c8', width: '8vw', height: '25px', borderColor: '#ff00c8', borderRadius: '4px', backgroundColor: 'white' }}>CREATE NEW</button>
-          </div>
+            <button 
+              style={{ color: '#ff00c8', width: '8vw', height: '25px', borderRadius: '4px', backgroundColor: 'white' }}>
+             <NavLink to="/signUp" >CREATE NEW </NavLink>
+
+            </button>         
+             </div>
         </div>
         <div className="text">
           <h2>we are more than just a company</h2>

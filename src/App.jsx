@@ -1,4 +1,4 @@
- import { useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -6,7 +6,7 @@ import Navbar from './component/Navbar'
 
 import Layout from './component/pages/Layout'
 import Home from './component/pages/Home'
-import Courses from './component/pages/Courses'
+import Report from './component/pages/Report'
 import Forum from './component/pages/Forum'
 import Blog from './component/pages/Blog'
 import SignInSide from './component/pages/auth/SignInSide'
@@ -25,10 +25,10 @@ function App() {
           <Route path="/categories" element={<Categories/>}></Route>
           <Route path="/forum" element={<Forum/>}></Route>
           <Route path="/blog" element={<Blog />}></Route>
-          <Route path="/courses" element={<Courses />}></Route>
+          <Route path="/report" element={<Report />}></Route>
           <Route path="/login" element={<SignInSide />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
-     
+          <Route path="/SignInSide" element={<SignInSide/>}></Route>     
           
 
 

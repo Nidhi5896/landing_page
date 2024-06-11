@@ -1,0 +1,10 @@
+.allTool{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.heading{
+    text-align: center;
+    margin-top: 10px;
+}

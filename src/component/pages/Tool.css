@@ -1,0 +1,13 @@
+.toolContainer{
+    height: 250px;
+    width: 250px;
+   
+    border-radius: 10px;
+    border: 0.5px solid black;
+    margin: 20px;
+    background-color: #00B5E2;
+}
+.image{
+    width: 100%;
+    height: 60%;
+}
